@@ -21,29 +21,46 @@ export default function Home() {
         className="flex flex-col justify-center items-center text-center min-viewport-50vh"
       >
         <p className="text-4xl">PROFILE</p>
-        <Image
-          src="/lucci.png"
-          width={200}
-          height={200}
-          alt="Picture of Kazutoki"
-          className="rounded-full"
-        />
-        <p>縄巻一鴻</p>
-        <p>大阪大学</p>
-        <p>2023年11月ごろから駆け出しのエンジニアをしております。</p>
-        <p>
-          このサイトはエンジニアとしての自己研鑽のために作った
-          <br />
-          Webサイト / Webアプリケーションを載せております。
-        </p>
-        <p>
-          またそれとは別に、海外旅行に行った時に撮った写真も掲載しております。
-        </p>
-        <p>
-          今後もアプリケーションやデザインのポートフォリオの内容を追加していく予定ですので、
-          <br />
-          どうぞよろしくお願いいたします。
-        </p>
+        <div className="flex">
+          <Image
+            src="/lucci.png"
+            width={200}
+            height={200}
+            alt="Picture of Kazutoki"
+            className="rounded-full w-40 h-40 self-center"
+          />
+          <div className="text-sm text-left">
+            <p>縄巻一鴻</p>
+            <p>あだ名はまっきー、まきまき、など</p>
+            <ul className="list-disc list-inside">
+              <li>1999年生まれ</li>
+              <li>静岡県東部出身</li>
+              <li>大阪大学 / 工学部卒</li>
+            </ul>
+            <p>2023年11月ごろから駆け出しのエンジニアとして働いています。</p>
+            <p>
+              直近はフロントエンドのスキルを高めるための勉強をしてきました。
+            </p>
+            <p>
+              これからはフロントエンドだけでなく、バックエンドやUI/UXなどの領域でも専門性を伸ばしていきたいと考えています。
+            </p>
+            <br />
+            <p>
+              このWebサイトには、エンジニアとしての自己研鑽のために作った
+              Webサイト / Webアプリケーション / Figmaデザインを載せています。{" "}
+            </p>
+            <p>
+              今後もポートフォリオの内容を追加していく予定ですので、どうぞよろしくお願いいたします。
+            </p>
+            <br />
+            <p>
+              またそれとは別に、海外旅行時に趣味で撮った写真も掲載しております。
+            </p>
+            <p>
+              日本では見られない景色がたくさんありますので、よかったら楽しんでいってください。
+            </p>
+          </div>
+        </div>
       </div>
       <div id="skill" className="flex flex-col justify-center items-center">
         <p className="text-4xl">SKILL</p>
