@@ -47,6 +47,9 @@ export default function Home() {
       </div>
       <div id="skill" className="flex flex-col justify-center items-center">
         <p className="text-4xl">SKILL</p>
+        <p>フロントエンドエンジニアを目指して日々勉強中です！</p>
+        <p>将来的にはバックエンドも作れる人材になりたいと思っております。</p>
+        <p>また、デザインにも興味があり、Figmaも一通り使えます。</p>
       </div>
       <div id="portfolio" className="flex flex-col justify-center items-center">
         <p className="text-4xl">PORTFOLIO</p>
@@ -58,7 +61,77 @@ export default function Home() {
         <p className="text-4xl">CERTIFICATION</p>
       </div>
       <div id="photo" className="flex flex-col justify-center items-center">
-        <p className="text-4xl">PHOTO</p>
+        <p className="text-4xl mb-4">PHOTO</p>
+        <div className="carousel w-3/4">
+          <div id="slide1" className="carousel-item relative w-full">
+            <Image
+              src="/carousel/usa.jpg"
+              width={1920}
+              height={1280}
+              alt="photo"
+              className="w-full"
+            />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <Link href="#slide4" className="btn btn-circle">
+                ❮
+              </Link>
+              <Link href="#slide2" className="btn btn-circle">
+                ❯
+              </Link>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <Image
+              src="/carousel/italy.jpg"
+              width={1920}
+              height={1280}
+              alt="photo"
+              className="w-full"
+            />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <Link href="#slide1" className="btn btn-circle">
+                ❮
+              </Link>
+              <Link href="#slide3" className="btn btn-circle">
+                ❯
+              </Link>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <Image
+              src="/carousel/swiss.jpg"
+              width={1920}
+              height={1280}
+              alt="photo"
+              className="w-full"
+            />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <Link href="#slide2" className="btn btn-circle">
+                ❮
+              </Link>
+              <Link href="#slide4" className="btn btn-circle">
+                ❯
+              </Link>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+            <Image
+              src="/carousel/malta.jpg"
+              width={1920}
+              height={1280}
+              alt="photo"
+              className="w-full"
+            />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <Link href="#slide3" className="btn btn-circle">
+                ❮
+              </Link>
+              <Link href="#slide1" className="btn btn-circle">
+                ❯
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="contact" className="flex flex-col justify-center items-center">
         <p className="text-4xl">CONTACT</p>

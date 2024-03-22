@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="bg-white flex fixed w-full h-16 justify-center items-center border-b-2 box-content">
