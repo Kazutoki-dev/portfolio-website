@@ -9,3 +9,25 @@
 .min-viewport-50vh {
   min-height: 50vh;
 }
+
+td {
+  height: 80px;
+}
+
+.title {
+  margin-bottom: 48px;
+}
+#top {
+  margin-bottom: 96px;
+}
+
+#profile,
+#skill,
+#portfolio,
+#certification,
+#photo,
+#contact {
+  padding-top: 80px;
+  margin-top: -80px;
+  margin-bottom: 96px;
+}
