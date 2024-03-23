@@ -24,7 +24,7 @@ export default function Home() {
         <p className="title text-4xl">PROFILE</p>
         <div className="flex w-3/4">
           <Image
-            src="/lucci.png"
+            src="/portrait.jpg"
             width={200}
             height={200}
             alt="Picture of Kazutoki"
