@@ -27,14 +27,14 @@ const Portfolio = () => {
             key={index}
             className="w-96 flex-col justify-center items-center"
           >
-            <div className="w-40 mx-28">
+            <div className="w-56 mx-auto mb-8">
               <a role="button" href={data.url} className="">
                 <Image
                   src={data.imgPath}
                   width={400}
                   height={400}
                   alt="icon"
-                  className="w-40 rounded-3xl"
+                  className="rounded-3xl"
                 />
               </a>
             </div>

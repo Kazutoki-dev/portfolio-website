@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Skill from "@/app/ui/home/skill";
 import Portfolio from "@/app/ui/home/portfolio";
+import Certification from "../ui/home/certification";
 
 export default function Home() {
   return (
@@ -66,39 +67,7 @@ export default function Home() {
       </div>
       <Skill />
       <Portfolio />
-      <div
-        id="certification"
-        className="flex flex-col justify-center items-center content"
-      >
-        <p className="title text-4xl">CERTIFICATION</p>
-        <div>
-          <div className="flex justify-center">
-            <div>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>基本情報技術者試験</td>
-                  </tr>
-                  <tr>
-                    <td>ITパスポート</td>
-                  </tr>
-                  <tr>
-                    <td>TOEIC 860点</td>
-                  </tr>
-                  <tr>
-                    <th></th>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* <Certification /> */}
       <div
         id="photo"
         className="flex flex-col justify-center items-center content"
@@ -175,7 +144,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Link className="btn btn-outline btn-block mt-8 w-1/2" href="/photo">
+        <Link className="btn btn-primary btn-outline mt-8 w-1/2" href="/photo">
           Go to PHOTO page
         </Link>
       </div>
@@ -184,6 +153,18 @@ export default function Home() {
         className="flex flex-col justify-center items-center content"
       >
         <p className="title text-4xl">CONTACT</p>
+        <a href="https://www.instagram.com/nawamakimaki/">
+          <button>
+            <Image
+              src="/Instagram_icon.png"
+              width={400}
+              height={400}
+              alt="Instagram Icon"
+              className="w-24 mb-8"
+            />
+          </button>
+        </a>
+        <p>上記インスタのDMにてご連絡ください</p>
       </div>
     </div>
   );
