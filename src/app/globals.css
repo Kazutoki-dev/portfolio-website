@@ -31,3 +31,7 @@ td {
   margin-top: -80px;
   margin-bottom: 96px;
 }
+
+.image-box {
+  max-width: 1300px;
+}

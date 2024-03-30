@@ -105,7 +105,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={process.env.NEXT_PUBLIC_PHOTO_PAGE ?? ""}>
+                  <Link href={process.env.NEXT_PUBLIC_USA_PAGE ?? ""}>
                     🇺🇸 USA
                   </Link>
                 </li>

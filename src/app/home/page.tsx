@@ -4,6 +4,7 @@ import Image from "next/image";
 import Skill from "@/app/ui/home/skill";
 import Portfolio from "@/app/ui/home/portfolio";
 import Certification from "../ui/home/certification";
+import CarouselHome from "../ui/Carousel/CarouselHome";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         className="flex flex-col justify-center items-center text-center min-viewport-50vh content"
       >
         <p className="title text-4xl">PROFILE</p>
-        <div className="flex w-3/4">
+        <div className="flex w-3/4 justify-center pl-10">
           <Image
             src="/portrait.jpg"
             width={200}
@@ -74,7 +75,7 @@ export default function Home() {
       >
         <p className="title text-4xl mb-4">PHOTO</p>
         {/* 写真カルーセル */}
-        <div className="carousel w-3/4">
+        {/* <div className="carousel w-3/4">
           <div id="slide1" className="carousel-item relative w-full">
             <Image
               src="/carousel/usa.jpg"
@@ -143,7 +144,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <CarouselHome />
         <Link className="btn btn-primary btn-outline mt-8 w-1/2" href="/photo">
           Go to PHOTO page
         </Link>
