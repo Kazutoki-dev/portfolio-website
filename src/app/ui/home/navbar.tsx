@@ -32,19 +32,19 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
               >
-                <li>
+                <li className="mb-1">
                   <Link href={process.env.NEXT_PUBLIC_PHOTO_PAGE ?? ""}>
                     Top
                   </Link>
                 </li>
-                <li>
+                <li className="mb-1">
                   <Link href={process.env.NEXT_PUBLIC_MALTA_PAGE ?? ""}>
-                    🇲🇹 Malta
+                    🇲🇹 &nbsp;Malta
                   </Link>
                 </li>
                 <li>
                   <Link href={process.env.NEXT_PUBLIC_USA_PAGE ?? ""}>
-                    🇺🇸 USA
+                    🇺🇸 &nbsp;USA
                   </Link>
                 </li>
               </ul>

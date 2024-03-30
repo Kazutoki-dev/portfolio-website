@@ -3,7 +3,7 @@ import Image from "next/image";
 const Portfolio = () => {
   const portfolioData = [
     {
-      url: "http://localhost:3000/home",
+      url: process.env.NEXT_PUBLIC_HOME_PAGE,
       imgPath: "/portfolio.jpg",
       message1: "ポートフォリオのためのWebサイトの制作",
       message2: "使用技術: Next.js、TailwindCSS、DaisyUI",
