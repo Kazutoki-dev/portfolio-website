@@ -28,7 +28,7 @@ const Portfolio = () => {
             className="w-96 flex-col justify-center items-center"
           >
             <div className="w-56 mx-auto mb-8">
-              <a role="button" href={data.url} className="">
+              <a role="button" href={data.url}>
                 <Image
                   src={data.imgPath}
                   width={400}
