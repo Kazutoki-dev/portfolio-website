@@ -3,14 +3,14 @@ import Image from "next/image";
 const Skill = () => {
   const skillDataLeft = [
     {
-      imgPath: "/icon/html5.png",
+      imgPath: "/icon/html.png",
       alt: "html",
       skillName: "HTML",
       period: "半年",
       className: "w-12",
     },
     {
-      imgPath: "/icon/css3.png",
+      imgPath: "/icon/css.png",
       alt: "css",
       skillName: "CSS",
       period: "半年",

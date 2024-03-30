@@ -51,7 +51,7 @@ const Malta = () => {
                 alt={data.id}
                 width={1200}
                 height={800}
-                className="m-auto"
+                className="m-auto cursor-pointer"
               />
             </div>
             <dialog id={data.id} className="modal">
