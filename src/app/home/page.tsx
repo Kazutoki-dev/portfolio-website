@@ -25,7 +25,7 @@ export default function Home() {
         className="flex flex-col justify-center items-center text-center min-viewport-50vh content"
       >
         <p className="title text-4xl">PROFILE</p>
-        <div className="flex-col flex md:w-3/4 justify-center mx-6 md:pl-8 md:pr-0">
+        <div className="flex-col flex md:w-5/6 lg:w-3/4 justify-center mx-6 md:pl-8 md:pr-0">
           <Image
             src="/portrait.jpg"
             width={200}
@@ -34,7 +34,7 @@ export default function Home() {
             className="rounded-full w-40 h-40 self-center mr-8"
           />
           {/* 自己紹介文 */}
-          <div className="text-left">
+          <div className="text-left mx-auto">
             <p>縄巻一鴻</p>
             <ul className="list-disc list-inside">
               <li>1999年生まれ</li>
