@@ -76,6 +76,7 @@ export default function Home() {
       >
         <p className="title text-4xl mb-4">PHOTO</p>
         <CarouselHome />
+        <p className="mt-4 md:hidden">※左右にスワイプ</p>
         <Link className="btn btn-primary btn-outline mt-8 w-1/2" href="/photo">
           Go to PHOTO page
         </Link>

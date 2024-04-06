@@ -21,7 +21,7 @@ const CarouselSingle: React.FC<CarouselProps> = ({ width, height, data }) => {
         alt={data.id}
         className="w-full"
       />
-      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 invisible md:visible">
         <a href={`#${data.id_before}`} className="btn btn-circle">
           ❮
         </a>
