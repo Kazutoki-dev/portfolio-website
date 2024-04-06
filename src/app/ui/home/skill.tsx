@@ -6,21 +6,21 @@ const Skill = () => {
       imgPath: "/icon/html.png",
       alt: "html",
       skillName: "HTML",
-      period: "半年",
+      period: "6ヶ月",
       className: "w-12",
     },
     {
       imgPath: "/icon/css.png",
       alt: "css",
       skillName: "CSS",
-      period: "半年",
+      period: "6ヶ月",
       className: "w-12",
     },
     {
       imgPath: "/icon/js.png",
       alt: "js",
       skillName: "Javascript",
-      period: "半年",
+      period: "6ヶ月",
       className: "w-12",
     },
     {
@@ -34,7 +34,7 @@ const Skill = () => {
       imgPath: "/icon/nodejs.png",
       alt: "nodejs",
       skillName: "Node.js",
-      period: "半年",
+      period: "6ヶ月",
       className: "w-12",
     },
   ];
@@ -58,7 +58,7 @@ const Skill = () => {
       imgPath: "/icon/git.png",
       alt: "git",
       skillName: "Git",
-      period: "半年",
+      period: "6ヶ月",
       className: "w-12",
     },
     {
@@ -85,7 +85,7 @@ const Skill = () => {
       <p className="title text-4xl">SKILL</p>
       {/* スキル表 */}
       <div>
-        <div className="flex justify-center">
+        <div className="flex flex-col md:flex-row justify-center">
           <div className="mx-12">
             <table className="table mx-4">
               <thead>
@@ -111,7 +111,22 @@ const Skill = () => {
                     <td>{skill.period}</td>
                   </tr>
                 ))}
-                <tr>
+                {skillDataRight.map((skill, index) => (
+                  <tr key={index} className="md:hidden">
+                    <th>
+                      <Image
+                        src={skill.imgPath}
+                        width={200}
+                        height={200}
+                        alt={skill.alt}
+                        className={skill.className}
+                      />
+                    </th>
+                    <td>{skill.skillName}</td>
+                    <td>{skill.period}</td>
+                  </tr>
+                ))}
+                <tr className="">
                   <th></th>
                   <th></th>
                   <th></th>
@@ -119,7 +134,7 @@ const Skill = () => {
               </tbody>
             </table>
           </div>
-          <div className="mx-12">
+          <div className="mx-12 hidden md:block">
             <table className="table mx-4">
               <thead>
                 <tr>
@@ -155,6 +170,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      <p>※2024年4月時点</p>
     </div>
   );
 };

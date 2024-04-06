@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Skill from "@/app/ui/home/skill";
 import Portfolio from "@/app/ui/home/portfolio";
-import Certification from "../ui/home/certification";
 import CarouselHome from "../ui/Carousel/CarouselHome";
 
 export default function Home() {
@@ -11,12 +10,14 @@ export default function Home() {
     <div className="font-base">
       <div
         id="top"
-        className="bg-[url('/malta.jpg')] bg-cover bg-center text-white text-4xl p-auto h-3/4 viewport-80vh align-center flex flex-col justify-center items-center"
+        className="bg-[url('/malta.jpg')] bg-cover bg-center text-white text-2xl sm:text-3xl md:text-4xl h-3/4 viewport-80vh align-center flex flex-col justify-center items-center"
       >
         <div className="w-full flex flex-col items-center justify-center bg-white py-6">
-          <p className="text-6xl mb-4 bg-white text-black">KAZUTOKI NAWAMAKI</p>
-          <p className="bg-white/30 text-black">ENGINEER / DESIGN / PHOTO</p>
-          <p className="bg-white text-black"> PORTFOLIO SITE</p>
+          <p className="text-3xl sm:text-5xl md:text-6xl mb-4 bg-white text-black">
+            KAZUTOKI NAWAMAKI
+          </p>
+          <p className="text-black">ENGINEER / DESIGN / PHOTO</p>
+          <p className="text-black"> PORTFOLIO SITE</p>
         </div>
       </div>
       <div
@@ -24,7 +25,7 @@ export default function Home() {
         className="flex flex-col justify-center items-center text-center min-viewport-50vh content"
       >
         <p className="title text-4xl">PROFILE</p>
-        <div className="flex w-3/4 justify-center pl-10">
+        <div className="flex-col flex md:w-3/4 justify-center mx-6 md:pl-8 md:pr-0">
           <Image
             src="/portrait.jpg"
             width={200}

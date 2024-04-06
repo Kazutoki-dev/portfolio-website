@@ -35,7 +35,7 @@ const CarouselHome = () => {
   };
 
   return (
-    <div className="carousel w-3/4 max-w-4xl">
+    <div className="carousel w-11/12 md:w-3/4 max-w-4xl">
       {props.data.map((data, index) => (
         <CarouselSingle
           key={index}

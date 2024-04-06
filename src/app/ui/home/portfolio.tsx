@@ -25,7 +25,7 @@ const Portfolio = () => {
         {portfolioData.map((data, index) => (
           <div
             key={index}
-            className="w-96 flex-col justify-center items-center"
+            className="w-full md:w-96 md:flex flex-col justify-center items-center mx-auto"
           >
             <div className="w-56 mx-auto mb-8">
               <a role="button" href={data.url}>
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 />
               </a>
             </div>
-            <div className="text-center">
+            <div className="text-center mb-12 md:mb-0">
               <p>{data.message1}</p>
               <p>{data.message2}</p>
             </div>

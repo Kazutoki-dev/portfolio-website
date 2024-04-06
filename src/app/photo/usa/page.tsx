@@ -1,8 +1,22 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Usa = () => {
+  // メディアクエリを使って画面サイズを監視
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", (e) => setIsMobile(e.matches));
+
+    return () =>
+      mediaQuery.removeEventListener("change", (e) => setIsMobile(e.matches));
+  }, []);
+
   // 画像の枚数
   const PHOTO_NUMBER = 20;
 
@@ -21,6 +35,22 @@ const Usa = () => {
     return images;
   };
 
+  const onClickOpenModal = (data: {
+    id_before: string;
+    id: string;
+    id_after: string;
+    src: string;
+  }) => {
+    if (!isMobile) {
+      const dialog = document.getElementById(data.id);
+      if (dialog instanceof HTMLDialogElement) {
+        dialog.showModal();
+      } else {
+        console.error("Dialog element not found or incorrect element type");
+      }
+    }
+  };
+
   const props = {
     data: createImageData(PHOTO_NUMBER),
   };
@@ -28,30 +58,21 @@ const Usa = () => {
   return (
     <div>
       <div className="mt-8 mb-12">
-        <h2 className="text-5xl text-center">San Francisco, USA</h2>
+        <h2 className="text-3xl md:text-5xl text-center">San Francisco, USA</h2>
       </div>
       <div className="flex flex-wrap justify-center items-center image-box m-auto">
         {props.data.map((data, index) => (
           <div key={index}>
             <div
-              className="w-96 h-72 mx-4 flex justify-center items-center"
-              onClick={() => {
-                const dialog = document.getElementById(data.id);
-                if (dialog instanceof HTMLDialogElement) {
-                  dialog.showModal();
-                } else {
-                  console.error(
-                    "Dialog element not found or incorrect element type"
-                  );
-                }
-              }}
+              className="w-11/12 mx-auto my-3 md:w-96 md:h-72 md:mx-4 flex justify-center items-center cursor-default	md:cursor-pointer"
+              onClick={() => onClickOpenModal(data)}
             >
               <Image
                 src={data.src}
                 alt={data.id}
                 width={1000}
                 height={1000}
-                className="m-auto cursor-pointer"
+                className="m-auto"
               />
             </div>
             <dialog id={data.id} className="modal">

@@ -14,7 +14,7 @@ const Photo = () => {
     {
       imgPath: "/photo/usa.jpg",
       alt: "usa",
-      countryName: "San Francisco, USA",
+      countryName: "USA",
       comment: "",
       nextPage: process.env.NEXT_PUBLIC_USA_PAGE,
     },
@@ -63,14 +63,14 @@ const Photo = () => {
               {image.nextPage ? (
                 <Link
                   href={image.nextPage ?? ""}
-                  className="btn btn-primary btn-outline btn-wide"
+                  className="btn btn-primary btn-outline md:btn-wide"
                 >
                   Look {image.countryName}
                 </Link>
               ) : (
                 <button
                   disabled={true}
-                  className="btn btn-primary btn-outline btn-wide"
+                  className="btn btn-primary btn-outline ,md:btn-wide"
                 >
                   Coming Soon...
                 </button>
