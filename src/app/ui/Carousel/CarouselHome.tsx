@@ -4,8 +4,8 @@ import CarouselSingle from "./component/CarouselSingle";
 
 const CarouselHome = () => {
   const props = {
-    width: 1920,
-    height: 1280,
+    width: 1200,
+    height: 800,
     data: [
       {
         id: "slide1",
