@@ -70,13 +70,11 @@ const Photo = () => {
               ) : (
                 <button
                   disabled={true}
-                  className="btn btn-primary btn-outline ,md:btn-wide"
+                  className="btn btn-primary btn-outline md:btn-wide"
                 >
                   Coming Soon...
                 </button>
               )}
-
-              {/* </button> */}
             </div>
           </div>
         </div>
