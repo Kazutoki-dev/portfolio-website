@@ -10,7 +10,7 @@ export default function Home() {
     <div className="font-base">
       <div
         id="top"
-        className="bg-[url('/malta.jpg')] bg-cover bg-center text-white text-2xl sm:text-3xl md:text-4xl h-3/4 viewport-80vh align-center flex flex-col justify-center items-center"
+        className="bg-[url('/home_bg.jpg')] bg-cover bg-center text-white text-2xl sm:text-3xl md:text-4xl h-3/4 viewport-80vh align-center flex flex-col justify-center items-center"
       >
         <div className="w-full flex flex-col items-center justify-center bg-white py-6">
           <p className="text-3xl sm:text-5xl md:text-6xl mb-4 bg-white text-black">
