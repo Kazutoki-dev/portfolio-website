@@ -42,11 +42,11 @@ const Photo = () => {
   ];
 
   return (
-    <div className="flex-col justify-center items-center mt-8">
+    <div className="flex flex-col justify-center items-center mt-8">
       {imageData.map((image, index) => (
         <div
           key={index}
-          className="card max-w-lg lg:card-side bg-base-100 shadow-xl w-3/4 lg:max-w-3xl self-center mx-auto mb-8"
+          className="card max-w-lg lg:card-side bg-base-100 shadow-xl md:w-3/4 lg:max-w-3xl self-center md:mx-auto mb-8 mx-4"
         >
           <figure>
             <Image
